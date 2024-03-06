@@ -1,4 +1,4 @@
-package com.testsecurity.test.configurations;
+package com.testsecurity.test.configurations.security;
 
 import io.jsonwebtoken.io.IOException;
 import org.springframework.security.core.AuthenticationException;

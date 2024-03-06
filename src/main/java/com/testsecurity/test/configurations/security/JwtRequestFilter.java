@@ -1,5 +1,6 @@
-package com.testsecurity.test.configurations;
+package com.testsecurity.test.configurations.security;
 
+import com.testsecurity.test.configurations.security.JWT;
 import com.testsecurity.test.services.auth.ApplicationUserDetailsService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;

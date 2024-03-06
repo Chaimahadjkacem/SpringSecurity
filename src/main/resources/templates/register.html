@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Création de compte</title>
+</head>
+<body>
+<h2>Bienvenue sur notre plateforme  <span style="font-weight: bold" th:text="${name}">null</span> </h2>
+<p>Veuillez créer un mot de passe pour votre compte.</p>
+
+<form action="http://localhost:8080/Sec/compte/confMdp" method="post">
+    <label for="password">Mot de passe:</label>
+    <input type="password" id="password" name="password" required>
+
+    <label for="confirmPassword">Confirmer le mot de passe:</label>
+    <input type="password" id="confirmPassword" name="confirmPassword" required>
+
+    <button type="submit">Créer le compte</button>
+</form>
+</body>
+</html>

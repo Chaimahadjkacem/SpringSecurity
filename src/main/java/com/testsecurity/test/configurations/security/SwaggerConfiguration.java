@@ -1,4 +1,4 @@
-package com.testsecurity.test.configurations;
+package com.testsecurity.test.configurations.security;
 
 import io.swagger.v3.oas.models.Components;
 import io.swagger.v3.oas.models.OpenAPI;

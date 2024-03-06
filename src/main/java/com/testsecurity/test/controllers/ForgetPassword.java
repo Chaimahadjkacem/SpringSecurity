@@ -1,7 +1,6 @@
 package com.testsecurity.test.controllers;
 
 
-import com.testsecurity.test.API.MailSenderService;
 import com.testsecurity.test.Dto.auth.AccountResponse;
 import com.testsecurity.test.Dto.auth.ResetPassword;
 import com.testsecurity.test.entities.Compte;
@@ -9,6 +8,7 @@ import com.testsecurity.test.repositories.CompteRepository;
 import com.testsecurity.test.services.CompteService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.web.bind.annotation.*;
@@ -27,7 +27,7 @@ public class ForgetPassword {
     public final CompteService compteService;
 
     @Autowired
-    MailSenderService mailSenderService;
+    private JavaMailSender mailSender;
 
     public final CompteRepository compteRepository;
 
@@ -42,7 +42,7 @@ public class ForgetPassword {
 
     @PostMapping("checkEmail")
     public String resetPasswordEmail(@RequestBody ResetPassword resetPassword, HttpServletRequest request) {
-        Compte compte = compteService.findByEmail(resetPassword.getEmail());
+        /*Compte compte = compteService.findByEmail(resetPassword.getEmail());
         AccountResponse accountResponse = new AccountResponse();
         if (compte != null) {
             // String code = UserCode.getCode();
@@ -55,7 +55,7 @@ public class ForgetPassword {
             accountResponse.setResult("User Found");
         } else {
             accountResponse.setResult("Forgot Password");
-        }
+        }*/
         return "redirect:/forgot-password?success";
     }
 

@@ -1,6 +1,8 @@
-package com.testsecurity.test.configurations;
+package com.testsecurity.test.configurations.security;
 
 
+import com.testsecurity.test.configurations.security.JwtAuthenticationEntryPoint;
+import com.testsecurity.test.configurations.security.JwtRequestFilter;
 import com.testsecurity.test.services.auth.ApplicationUserDetailsService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
@@ -49,7 +51,9 @@ public class SpringSecurityConfiguration extends WebSecurityConfigurerAdapter  {
         http.cors().and().csrf().disable();
         http.csrf().disable()
                 .authorizeRequests()
-                .antMatchers("/**/auth",
+                .antMatchers(
+                        "/**/confMdp",
+                        "/**/auth",
                         "/**/addProsAndCompte" ,
                         "/**/logout",
                         "/**/user/addUser",
@@ -97,7 +101,7 @@ public class SpringSecurityConfiguration extends WebSecurityConfigurerAdapter  {
     @Bean
    public CorsConfigurationSource corsConfigurationSource() {
         CorsConfiguration configuration = new CorsConfiguration();
-        configuration.setAllowedOrigins(Arrays.asList("http://localhost:4200"));
+        configuration.setAllowedOrigins(Arrays.asList("*"));
         configuration.setAllowedMethods(Arrays.asList("GET", "POST", "PUT", "DELETE"));
         configuration.setAllowedHeaders(Arrays.asList("Content-Type", "Authorization"));
         configuration.setAllowCredentials(true);

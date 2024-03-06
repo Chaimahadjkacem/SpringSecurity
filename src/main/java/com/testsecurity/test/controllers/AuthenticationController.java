@@ -3,8 +3,8 @@ package com.testsecurity.test.controllers;
 
 import com.testsecurity.test.Dto.auth.AuthenticationRequest;
 import com.testsecurity.test.Dto.auth.AuthenticationResponse;
-import com.testsecurity.test.configurations.JWT;
-import com.testsecurity.test.configurations.SpringSecurityConfiguration;
+import com.testsecurity.test.configurations.security.JWT;
+import com.testsecurity.test.configurations.security.SpringSecurityConfiguration;
 import com.testsecurity.test.repositories.CompteRepository;
 import com.testsecurity.test.services.auth.ApplicationUserDetailsService;
 import io.swagger.v3.oas.annotations.security.SecurityRequirements;

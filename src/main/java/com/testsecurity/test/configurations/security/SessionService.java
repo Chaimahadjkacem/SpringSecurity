@@ -1,4 +1,4 @@
-package com.testsecurity.test.configurations;
+package com.testsecurity.test.configurations.security;
 
 import com.testsecurity.test.entities.Compte;
 import com.testsecurity.test.repositories.CompteRepository;
