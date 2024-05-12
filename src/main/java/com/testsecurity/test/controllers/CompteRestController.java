@@ -4,6 +4,7 @@ import com.testsecurity.test.entities.Prospect;
 import com.testsecurity.test.services.CompteService;
 import com.testsecurity.test.services.ProspectService;
 import lombok.RequiredArgsConstructor;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import javax.mail.MessagingException;
@@ -38,6 +39,11 @@ public class CompteRestController {
 
         // Redirigez vers une page de réussite ou une autre page appropriée
         return "redirect:/registration-success";
+    }
+
+    @GetMapping("get")
+    public ResponseEntity<String> sayHello(){
+        return ResponseEntity.ok("Hello from secured endPoint");
     }
 
 

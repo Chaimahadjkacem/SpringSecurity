@@ -10,6 +10,7 @@ import org.springframework.stereotype.Service;
 
 import java.security.Key;
 import java.util.Date;
+import java.util.HashMap;
 import java.util.Map;
 import java.util.function.Function;
 
@@ -31,6 +32,10 @@ public class JwtService {
     }
 
 
+    public  String generateToken(UserDetails userDetails){
+        return generateToken(new HashMap<>(),userDetails);
+    }
+
     //to generate the token
     //the map will contain the claims or the extra claims that we want to add
     //IssuedAt (when this claim was created to calculate the expiration date and to check if it's still valid or not 24hours + 1000 milliseconds )
@@ -44,6 +49,26 @@ public class JwtService {
                 .signWith(getSigninKey(), SignatureAlgorithm.HS256)
                 .compact() ; 
     }
+
+    //Method to validate a token
+    //we want to validate if this token belongs to user details
+    public  boolean isTokenValid(String token , UserDetails userDetails){
+        //username = useremail
+        final String username = extractUsername(token);
+        return (username.equals(userDetails.getUsername())) && !isTokenExpired(token);
+    }
+
+    private boolean isTokenExpired(String token){
+
+        return extractExpiration(token).before(new Date());
+    }
+
+    private Date extractExpiration(String token){
+        //from the token
+        return extractClaim(token, Claims::getExpiration );
+    }
+
+
 
     //when we try to generate or to decode a token we need to use the signinKey
     //Parse our token and once the token is parsed we can call the method get Body -> get body( we can get all the claims that we have within the token

@@ -11,10 +11,10 @@ import java.util.Collection;
 import java.util.Set;
 
 @Entity
-@Getter
-@Setter
+@Data
 @NoArgsConstructor
 @AllArgsConstructor
+@Builder
 @FieldDefaults(level = AccessLevel.PRIVATE)
 public class Prospect  implements Serializable , UserDetails {
     @Id

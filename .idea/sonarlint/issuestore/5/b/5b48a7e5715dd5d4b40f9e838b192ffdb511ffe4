@@ -1,0 +1,11 @@
+
+T
+java:S35169"9Refactor this method to not always return the same value.(¡ÂºÄøÿÿÿÿ
+X
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ
+Z
+java:S1128"DRemove this unused import 'com.testsecurity.test.entities.Prospect'.(­‰ç
+h
+java:S1128"RRemove this unused import 'com.testsecurity.test.repositories.ProspectRepository'.(Í¯Ãü
+V
+java:S1128";Remove this unused import 'lombok.RequiredArgsConstructor'.(ÑØúøÿÿÿÿ
