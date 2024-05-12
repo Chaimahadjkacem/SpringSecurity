@@ -1,0 +1,13 @@
+
+~
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞJ$6b0f6636-c333-4bcd-acd5-5db2a8e93867
+~
+java:S6813""BRemove this field injection and use constructor injection instead.(êæÄŞJ$847b1122-35c2-48ba-bcbc-8d530e7f0493
+~
+java:S6813%"BRemove this field injection and use constructor injection instead.(êæÄŞJ$bb43c25d-f9d1-4173-b3d8-02d44c5cbd85
+…
+java:S1874"DRemove this use of "WebSecurityConfigurerAdapter"; it is deprecated.(¢ÈÀúÿÿÿÿJ$369ca629-1140-4e79-bb2c-9d2468ef9c3d
+
+java:S1128"TRemove this unnecessary import: same package classes are always implicitly imported.(¢Ò« J$1cea7cf6-5d2e-4430-b71f-151342323877
+
+java:S1128"TRemove this unnecessary import: same package classes are always implicitly imported.(Ú¬J$8d3dbee9-f1f7-4570-93a8-5d89398490c6

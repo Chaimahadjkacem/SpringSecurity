@@ -1,0 +1,16 @@
+
+‘	java:S117K"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÁØñŽüÿÿÿÿJ$db2de04a-4760-466d-9e6c-9e9790b30d9f
+~
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄÞJ$5c116e6f-1df2-496b-8e44-c9bcea0074fe
+š
+java:S1171%"YMove the contents of this initializer to a standard constructor or to field initializers.(ÒÌâ–øÿÿÿÿJ$897231f8-a2b0-48b0-9ba8-cb02c360b3a3
+w	java:S125-"<This block of commented-out lines of code should be removed.(‡¬èÂJ$cfc30649-bb47-4778-8d1f-18f4168aee99
+ƒ
+java:S1126B"BReplace this if-then-else statement by a single method invocation.(µ°ÆÁýÿÿÿÿJ$28da8df3-318f-4e30-a442-11bbbb374fb1
+„
+java:S1854O"CRemove this useless assignment to local variable "accountResponse".(ßÞâ¢ùÿÿÿÿJ$805f8fa2-8fe4-44e5-b8f9-c17fb4744d88
+u
+java:S1481O"4Remove this unused "accountResponse" local variable.(ßÞâ¢ùÿÿÿÿJ$f94e7418-56bc-4103-8eb3-17f50dc45f58
+k	java:S106W"+Replace this use of System.out by a logger.(æ¨¤šøÿÿÿÿJ$f9fe78ee-0062-4284-aff1-b13ded6c8752
+l
+java:S1128"+Remove this unused import 'java.util.UUID'.(ÀãÄ£úÿÿÿÿJ$2f588b77-0009-4478-bc25-22f193c05a94

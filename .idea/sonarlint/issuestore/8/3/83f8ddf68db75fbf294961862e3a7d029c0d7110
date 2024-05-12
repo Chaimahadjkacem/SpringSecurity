@@ -1,0 +1,7 @@
+
+‰	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¬ãÍ—J$e22cd177-f2d7-4b2d-ab9b-c2ab90c08709
+|
+java:S4684"@Replace this persistent entity with a simple POJO or DTO object.(¬ãÍ—J$a0a01c04-1d9f-44b5-823d-e0d097159b73
+f	java:S106%"+Replace this use of System.out by a logger.(Í½¸ªJ$9654c49f-79f6-4216-99b3-b417c7afb8e0
+…
+java:S1128"IRemove this unused import 'com.testsecurity.test.services.CompteService'.(¨´éÔJ$660e8ed1-3ed9-460f-bbac-3e31922a0454
